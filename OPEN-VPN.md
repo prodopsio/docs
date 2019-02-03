@@ -27,7 +27,7 @@ So you have your OpenVPN server ready to work with, in this doc we'll go through
 1. Once the client is installed you need to load your downloaded profile into it. If you're using the CLI version of open vpn, we'll be using it directly from the command line
 1. try `openvpn` in your console, you may need to `export PATH=$(brew --prefix openvpn)/sbin:$PATH` if it was installed with brew
 1. Connect by running `sudo openvpn <file.ovpn>` (send to background by `CTRL+z` then `bg %1`, bring back to forground with `fg`)
-* Using TunnelBlick or OpenVPN-Connect is more self-explanatory throught he applications' GUI so I'll keep this section brief
+* Using TunnelBlick or OpenVPN-Connect is more self-explanatory through-out the applications' GUI so I'll keep this section brief
 
 
 ## Test your VPN connection
@@ -46,12 +46,12 @@ OpenVPN sets his own certificate by default which most browsers tend to label as
 It's recommeneded that you keep your VPN safe and monitored as this is the one gateway separating connections from the outsideworld directly to private resources (other than probably loadbalancers)
 * Keep ports `22` & `943` only accessible to a specific IP (if at all) as you don't normally need them open.
 * Ports `443` & `1194` are used for client's access. If you know a specific IP range and addresses it's good to lock these also down to where they are required rather than `0.0.0.0/0`
-* Make sure all users have passwords and only relevant personel have admin settings allowed
+* Make sure all users have passwords and only relevant personnel have admin settings allowed
 * MFA is recommended, here are a few ways: 1. [DUO](https://duo.com/docs/openvpn), 2. [Authy](https://www.authy.com/integrations/openvpn/), 3. [manual](https://medium.com/we-have-all-been-there/using-google-authenticator-mfa-with-openvpn-on-ubuntu-16-04-774e4acc2852)
 
 
 ## Purchasing a license
-By deafult OpenVPN gives you two concurrent access slots, so if a third user required a login while two others are having open connections, the third will be rejected.
+By default OpenVPN gives you two concurrent access slots, so if a third user required a login while two others are having open connections, the third will be rejected.
 Purchasing and installing a certificate is a very easy process. [ Pricing ](https://openvpn.net/pricing/) is around **$15 per user per year**.
 
 
